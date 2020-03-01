@@ -1,0 +1,126 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWarn>$(NoWarn);RCS1090</NoWarn>
+    <Configurations>Debug;Release;INTE;PREPROD</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EntityFramework\Migrations\20190919065627_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20190919065627_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20190920100405_BORRAR.cs" />
+    <Compile Remove="EntityFramework\Migrations\20190920100405_BORRAR.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20190920100525_BORRAR.cs" />
+    <Compile Remove="EntityFramework\Migrations\20190920100525_BORRAR.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191121093235_Initial.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191121093235_Initial.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191126080037_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191126080037_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191126112945_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191126112945_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127123548_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127123548_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127123653_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127123653_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127124025_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127124025_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127134622_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127134622_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127142338_Prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127142338_Prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127144922_Initial_Security.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127144922_Initial_Security.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127150606_Initial_Security.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127150606_Initial_Security.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127150653_Initial_Security.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127150653_Initial_Security.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127151158_Initial_SecurityModel.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191127151158_Initial_SecurityModel.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191210073837_v0.0.0.1-initial.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191210073837_v0.0.0.1-initial.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191218085505_prueba.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191218085505_prueba.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191218121723_v0.0.0.2.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191218121723_v0.0.0.2.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191218121847_v0.0.0.2.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191218121847_v0.0.0.2.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191219081613_UserWorkCalendarFK.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191219081613_UserWorkCalendarFK.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191220100151_v0.0.0.4.cs" />
+    <Compile Remove="EntityFramework\Migrations\20191220100151_v0.0.0.4.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200102124046_v0.0.0.5.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200102124046_v0.0.0.5.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103062444_v0.0.0.5.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103062444_v0.0.0.5.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103065126_v0.0.0.5.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103065126_v0.0.0.5.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103123136_v0.0.0.5.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103123136_v0.0.0.5.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103123238_v0.0.0.5.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200103123238_v0.0.0.5.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200108083805_v0.0.0.6.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200108083805_v0.0.0.6.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200110123143_v0.0.0.7.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200110123143_v0.0.0.7.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200110125637_v0.0.0.7.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200110125637_v0.0.0.7.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200113071257_v.0.0.0.8.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200113071257_v.0.0.0.8.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200113105451_AddVacation_AddVacationDetails.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200113105451_AddVacation_AddVacationDetails.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200116093117_DESHACER.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200116093117_DESHACER.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200117111953_ClockInReminderNotificationType.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200117111953_ClockInReminderNotificationType.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200117121413_v0.0.0.6.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200117121413_v0.0.0.6.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200123105609_BORRAR.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200123105609_BORRAR.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200124065858_BORRAR.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200124065858_BORRAR.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200127080234_ExceededWorkTimeNotification.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200127080234_ExceededWorkTimeNotification.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200129080628_AddUserColumnsDatesAndVacationDays.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200129080628_AddUserColumnsDatesAndVacationDays.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200129115339_v.0.0.0.11.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200129115339_v.0.0.0.11.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200204124036_PRUEBAS.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200204124036_PRUEBAS.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200205111548_BORRAR.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200205111548_BORRAR.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200210130033_UpdateNotificationTypeNewUserMessage.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200210130033_UpdateNotificationTypeNewUserMessage.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200216181153_v0.0.0.1-initial-migration.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200216181153_v0.0.0.1-initial-migration.Designer.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200220071040_v0.0.0.1-initial-migration.cs" />
+    <Compile Remove="EntityFramework\Migrations\20200220071040_v0.0.0.1-initial-migration.Designer.cs" />
+    <Compile Remove="Migrations\20200227145707_v0.0.0.0-Initial.cs" />
+    <Compile Remove="Migrations\20200227145707_v0.0.0.0-Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200301065849_v0.0.0.1.cs" />
+    <Compile Remove="Migrations\20200301065849_v0.0.0.1.Designer.cs" />
+    <Compile Remove="Migrations\20200301070400_v0.0.0.1.cs" />
+    <Compile Remove="Migrations\20200301070400_v0.0.0.1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiTemplate.Core.Domain\ApiTemplate.Core.Domain.csproj" />
+    <ProjectReference Include="..\ApiTemplate.Core.Utils\ApiTemplate.Core.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

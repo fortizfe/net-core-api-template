@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWarn>$(NoWarn);RCS1090</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApplicationServices\Interfaces\**" />
+    <Compile Remove="ApplicationServices\Services\**" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="ApplicationServices\Interfaces\**" />
+    <EmbeddedResource Remove="ApplicationServices\Services\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="ApplicationServices\Interfaces\**" />
+    <None Remove="ApplicationServices\Services\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="HttpClients\Interfaces\" />
+    <Folder Include="HttpClients\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiTemplate.Core.Domain\ApiTemplate.Core.Domain.csproj" />
+    <ProjectReference Include="..\ApiTemplate.Core.Infrastructure\ApiTemplate.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\ApiTemplate.Core.Utils\ApiTemplate.Core.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\ApplicationServices\WorkerService.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WorkerService.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\ApplicationServices\WorkerService.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkerService.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
